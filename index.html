@@ -1,0 +1,60 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div>
+<img src="dinosaurus.jpg" width=100%>
+</div>
+<div class="w3-bar w3-black" width=100%>
+ <button class="w3-bar-item w3-button" onclick="openDino('Profile')">Profile</button>
+ <button class="w3-bar-item w3-button" onclick="openDino('Home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openDino('Trex')">Trex</button>
+ <button class="w3-bar-item w3-button" onclick="openDino('Brontosaurus')">Brontosaurus</button>
+ <button class="w3-bar-item w3-button" onclick="openDino('Stegosaurus')">Stegosaurus</button>
+ <button class="w3-bar-item w3-button" onclick="openDino('Triceratops')">Triceratops</button>
+</div>
+<div id="Profile" class="w3-container Dino w3-animate-left" style="display: none;">
+<h2>Adib Jahfal Al Asyari</h2>
+<p>Saya Adib Jahfal Al Asyari, Nim 10121088, Kelas IF 3</p>
+<img src="Profile.jpg" width=20%>  
+</div>
+<div id="Home" class="w3-container Dino">
+ <center>
+ <h2>Welcome</h2>
+ <p>
+ <img src="Home.jpg">
+</div>
+<center>
+<div id="Trex" class="w3-container Dino w3-animate-left" style="display:none">
+ <h2>Trex</h2>
+ <p>Tyrannosaurus adalah sebuah genus dinosaurus teropoda yang tergolong ke dalam klad Coelurosauria. Spesies Tyrannosaurus rex (sering dijuluki T. rex atau T-Rex; "rex" berarti "raja" dalam bahasa Latin) adalah salah satu teropoda besar yang paling dikenal oleh khalayak luas. Tyrannosaurus hidup di sebuah benua yang dikenal dengan nama Laramidia, yang kini telah berubah menjadi Amerika Utara bagian barat. Tyrannosaurus jauh lebih tersebar daripada hewan-hewan Tyrannosauridae lainnya. Fosil-fosil Tyrannosaurus telah ditemukan di berbagai formasi geologi dari zaman Kapur Akhir sekitar 68 hingga 65 juta tahun yang lalu. Tyrannosaurus merupakan salah satu dinosaurus nonburung terakhir sebelum terjadinya peristiwa kepunahan Kapur–Paleogen.</p>
+ <img src="Trex.png">
+</div>
+<div id="Brontosaurus" class="w3-container Dino w3-animate-right" style="display:none">
+ <h2>Brontosaurus</h2>
+ <p>Brontosaurus, (genus Brontosaurus), genus dinosaurus sauropoda herbivora besar yang hidup selama zaman Jura Akhir dan Kapur Awal (163,5 juta hingga 100,5 juta tahun yang lalu). Its fosil pertama kali ditemukan di Amerika Utara barat pada tahun 1874 dan pertama kali dijelaskan pada tahun 1879 oleh ahli paleontologi AmerikaOtniel Charles Marsh. Pada tahun 1903, bagaimanapun, genus Brontosaurus, yang berarti "kadal guntur" dalam bahasa Yunani, dimasukkan oleh genus yang dijelaskan sebelumnya.Apatosaurus.</p>
+<img src="Brontosaurus.jpg">
+</div>
+<div id="Stegosaurus" class="w3-container Dino w3-animate-left" style="display:none">
+ <h2>Stegosaurus</h2>
+ <p>Stegosaurus artinya "kadal beratap", karena sisik besar di punggungnya (bahasa Yunani stego = piring/atap + sauros = kadal) adalah sebuah genus dinosaurus herbivora besar dari Awal Jurassic di Amerika Utara.</p>
+ <img src="Stegosaurus.png">
+</div>
+<div id="Triceratops" class="w3-container Dino w3-animate-right" style="display:none">
+ <h2>Triceratops</h2>
+ <p>Triceratops (dari bahasa Yunani, artinya "wajah bertanduk tiga") merupakan jenis dinosaurus bertanduk tiga yang berbadan besar. Panjangnya bisa mecapai 9 m, tingginya sekitar 3, 8 m dan berat 6, 5 ton. Panggilan pendeknya Tritop.</p>
+ <img src="Triceratops.jpg">
+</div>
+<script>
+function openDino(namaDino) {
+ var i;
+ var x = document.getElementsByClassName("Dino");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaDino).style.display = "block";
+}
+</script>
+</body>
+</html>
